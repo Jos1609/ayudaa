@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quieres ser mi Dua</title>
+  <style>
+    .body {
+      background-color: rgb(220, 20, 153);
+      text-align: center;
+    }
+    .body__title{
+      color:white;
+    }
+    .title{
+      color:white;
+    }
+    .body__img{
+      width: 50%;
+      border-radius: 50%;
+    }
+
+  </style>
+
+</head>
+
+<body class="body">
+    <h1 class="body__title">❤ ¿Quieres ser mi Dúa? ♥</h1>
+      <img
+        src="https://static.wixstatic.com/media/16fbb1_5846be69477640e4bdc388d131db41dc~mv2.png/v1/fill/w_700,h_700,al_c/icon.png"
+        alt="Imagen del amor" class="body__img"/>
+        <h2 class="title">  </h2>
+    <button id = "yes">SI</button>
+    <button id="no">NO</button>
+  
+
+  <script>
+    const btnsi = document.getElementById('yes');
+    const btno = document.getElementById('no');
+
+    const somos = () =>{
+      alert('Sabía que dirías que sí wiiiiiiiiii');
+      location.href = 'https://wa.me/51918817238?text=Si%20quiero%20ser%20tu%20dua%20%E2%99%A5'
+    }
+    const evitar = () =>{
+      btno.style.position = 'absolute';
+      btno.style.top = (Math.random() * window.innerHeight) + 'px';
+      btno.style.left = (Math.random() * window.innerWidth) + 'px';
+
+    }
+    btnsi.addEventListener('click',somos);
+    btno.addEventListener('mouseover', evitar);
+
+  </script>
+</body>
+
+</html>
